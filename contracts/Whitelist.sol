@@ -11,7 +11,7 @@ contract Whitelist {
         merkleRoot = _merkleRoot;
     }
 
-    function chenInWhitelist(
+    function checkInWhitelist(
         bytes32[] calldata proof,
         uint64 maxAllowanceToMint
     ) public view returns (bool) {
